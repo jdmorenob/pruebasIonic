@@ -1,10 +1,14 @@
 <ion-header>
   <ion-navbar>
     <ion-title>Home</ion-title>
+
+    <ion-buttons right>
+		<button ion-button icon-only (click)="mostrarMenu()" color="morado"><ion-icon name="menu"></ion-icon></button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <h2>Modal</h2>
-  <button ion-button color="morado" block>Mostral modal</button>
+  <button ion-button color="morado" block (click)="mostrarModal()">Mostrar modal</button>
 </ion-content>
